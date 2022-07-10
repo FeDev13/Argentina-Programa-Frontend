@@ -1,0 +1,28 @@
+*{
+    color: white;
+    background-color: black;
+}
+
+#name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+p {
+    margin-left: 1.5rem;
+}
+#aboutme {
+    margin-top: 1rem;
+    padding-left: 5rem;
+}
+#profilepic {
+    margin-left: 0.75rem;
+    border-radius: 100%;
+}
+@media (max-width: 575px){
+    #profilepic {
+       position: relative;
+       padding: 5rem;
+    }
+}

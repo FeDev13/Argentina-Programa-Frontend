@@ -1,0 +1,20 @@
+*{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+.skills {
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.htmlimg {
+    width: 6.25rem;
+    
+}
+.cssimg {
+    width: 7.8rem;
+}
+.jsimg {
+    width: 7rem;
+}

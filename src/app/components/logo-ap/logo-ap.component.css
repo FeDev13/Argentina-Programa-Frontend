@@ -1,0 +1,27 @@
+#logoAP{
+    width: 10.37rem;
+
+}
+img {
+    width: 2.3rem;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes {
+    margin-right: 5rem;
+}
+#github{
+    margin: 1rem;
+}
+#linkedin {
+    margin: 1rem;
+}
+#instagram {
+    margin: 1rem;
+}
+#button {
+    margin: 1.5rem;
+}

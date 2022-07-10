@@ -1,0 +1,28 @@
+*{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+.projectos {
+    margin-top: 7rem;
+   
+    font-size: 2rem;
+}
+.contenedor {
+    width: auto;
+}
+.proyecto1, .proyecto2, .proyecto3 {
+    display: inline-block;
+}
+#todo {
+    width: auto;
+   margin: 2rem 0 2rem 0;
+}
+#jsclock {
+    width: auto;
+   margin: 2rem 0 2rem 0;
+}
+#portfolio {
+    width: auto;
+    margin: 2rem 0 2rem 0;
+}
