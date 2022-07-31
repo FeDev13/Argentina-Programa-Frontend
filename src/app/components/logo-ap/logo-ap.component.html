@@ -10,9 +10,8 @@
           <a href=""
             ><img src="../../../assets/instagram.png" id="instagram"
           /></a>
-          <button class="btn btn-dark" autocomplete="off" id="button" (click)="login()">
-            Login
-          </button>
+          <button class="btn btn-dark" autocomplete="off" id="button" (click)="login()"*ngIf="!isLogged">Login</button>
+          <button class="btn btn-dark" autocomplete="off" id="button" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
         </div>
       </div>
     </div>
