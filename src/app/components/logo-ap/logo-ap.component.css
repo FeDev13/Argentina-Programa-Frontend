@@ -25,3 +25,10 @@ img {
 #button {
     margin: 1.5rem;
 }
+
+@media (max-width: 590px){
+    .container {
+        display: grid;
+        align-items: left;
+    }
+}

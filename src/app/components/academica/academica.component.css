@@ -1,17 +1,17 @@
 *{
     background-color: black;
     color: white;
+    font-size: 1.5rem;
     
 }
 h1{
     display: inline;
     
-
-   
 }
 .educ {
+    margin-left: 1rem;
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 li {
@@ -42,7 +42,10 @@ li {
     float: left;
 }
 .titulo {
-   
     width: 50%;
     align-items: center;
+}
+.coderlogo{
+    margin-top: 5rem;
+    width: 30%;
 }
