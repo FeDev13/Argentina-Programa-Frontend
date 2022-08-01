@@ -15,12 +15,12 @@
                     </div>
                     <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                       <div class="form-outline form-white mb-4">
-                        <input type="text" id="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
+                        <input type="text" id="nombreUsuario" name="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
                         <label class="form-label" for="nombreUsuario">Usuario</label>
                       </div>
     
                       <div class="form-outline form-white mb-4">
-                        <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password"
+                        <input type="password" id="password" name="form-control form-control-lg" [(ngModel)]="password"
                         required />
                         <label class="form-label" for="password">Password</label>
                       </div>
@@ -41,7 +41,7 @@
                     
   
                     <div class="text-center py-5">
-                      <button class="btn btn-light btn-lg btn-rounded px-5" type="submit">Login</button>
+                      <button class="btn btn-light btn-lg btn-rounded px-5" type="submit" (click)="onLogin()">Login</button>
                     </div>
   
                   </div>
