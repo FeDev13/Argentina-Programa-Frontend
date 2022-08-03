@@ -20,6 +20,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { interceptorProvider } from './service/interceptor-service';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 
@@ -37,6 +38,8 @@ import { interceptorProvider } from './service/interceptor-service';
     ProjectsComponent,
     HomeComponent,
     LoginComponent,
+    EditExperienciaComponent,
+    
   ],
   imports: [
     BrowserModule,
