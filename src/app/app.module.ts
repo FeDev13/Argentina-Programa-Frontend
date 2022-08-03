@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { AngularBeeProgressBarModule } from 'angular-bee-progress-bar';
+
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoApComponent } from './components/logo-ap/logo-ap.component';
@@ -40,6 +43,7 @@ import { interceptorProvider } from './service/interceptor-service';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    AngularBeeProgressBarModule,
     FormsModule
   ],
   providers: [interceptorProvider],
