@@ -32,3 +32,14 @@ img {
         align-items: left;
     }
 }
+
+@media (max-width: 416px){
+    .container {
+        display: grid;
+        align-items: center;
+    }
+
+    #github, #linkedin, #instagram {
+        width: 10%;
+    }
+}

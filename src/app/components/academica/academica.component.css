@@ -34,7 +34,7 @@ li {
 }
 .freecodeimg {
     float: left;
-    width: 10rem;
+    width: 7rem;
 
 }
 .aplogo {
@@ -51,4 +51,10 @@ li {
 }
 #boton{
     margin-top: 3rem;
+}
+
+@media (max-width: 590px){
+    .coderlogo {
+        width: 50%;
+    }
 }
