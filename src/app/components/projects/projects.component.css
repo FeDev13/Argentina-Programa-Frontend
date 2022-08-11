@@ -12,6 +12,7 @@ h2{
 }
 .contenedor {
     width: auto;
+    margin-top: 3rem;
 }
 .proyecto1, .proyecto2, .proyecto3 {
     display: inline-block;
@@ -28,4 +29,8 @@ h2{
 #portfolio {
     width: auto;
     margin: 2rem 0 2rem 0;
+}
+#florskinart {
+    width: auto;
+   margin: 2rem 0 2rem 0;
 }

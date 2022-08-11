@@ -43,3 +43,14 @@ img {
         width: 10%;
     }
 }
+
+@media (max-width: 395px){
+    .container {
+        display: grid;
+        align-items: center;
+    }
+
+    #github, #linkedin, #instagram {
+        width: 8%;
+    }
+}
