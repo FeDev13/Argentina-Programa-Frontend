@@ -58,3 +58,8 @@ li {
         width: 50%;
     }
 }
+
+.card {
+    margin: 1rem;
+    border: none;
+}

@@ -1,6 +1,6 @@
 <section class="intro">
     <div class="bg-image h-100" style="background-color:black">
-      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(255,255,255,.6);">
+      <div class="mask d-flex align-items-center h-100" style="background-color: linear-gradient(120deg, #3d3d29, #000000);">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -11,18 +11,21 @@
   
                     <div class="text-center pt-1">
                       <i class="fas fa-user-astronaut fa-3x"></i>
-                      <h1 class="fw-bold my-5 text-uppercase">Ingresar</h1>
+                      <h1 class="fw-bold">Ingresar</h1>
                     </div>
                     <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                       <div class="form-outline form-white mb-4">
-                        <input type="text" id="nombreUsuario" name="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
                         <label class="form-label" for="nombreUsuario">Usuario</label>
+                        <input type="text" id="nombreUsuario" name="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
+                        
                       </div>
     
                       <div class="form-outline form-white mb-4">
+                        
+                        <label class="form-label" for="password">Password</label>
                         <input type="password" id="password" name="form-control form-control-lg" [(ngModel)]="password"
                         required />
-                        <label class="form-label" for="password">Password</label>
+                        
                       </div>
     
                       <div class="form-check">

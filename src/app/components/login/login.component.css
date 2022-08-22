@@ -30,3 +30,7 @@ body,
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(120deg, #3d3d29, #000000)
 }
+
+.fw-bold{
+  margin-bottom: 2rem;
+}
