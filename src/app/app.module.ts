@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-import { AngularBeeProgressBarModule } from 'angular-bee-progress-bar';
+
 
 
 
@@ -22,6 +22,8 @@ import { LoginComponent } from './components/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { interceptorProvider } from './service/interceptor-service';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NewacademicaComponent } from './components/academica/newacademica.component';
+import { EditacademicaComponent } from './components/academica/editacademica.component';
 
 
 
@@ -40,6 +42,8 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     HomeComponent,
     LoginComponent,
     EditExperienciaComponent,
+    NewacademicaComponent,
+    EditacademicaComponent,
     
   ],
   imports: [
@@ -47,7 +51,6 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    AngularBeeProgressBarModule,
     FormsModule
   ],
   providers: [interceptorProvider],
