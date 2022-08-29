@@ -6,8 +6,10 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
+import { NewSkillComponent } from './components/skills/new-skill.component';
 
-const routes: Routes = [{path:"", component:HomeComponent},{path:"login", component:LoginComponent}, { path: 'nuevaexp', component: NewExperienciaComponent},  { path: 'editexp/:id', component: EditExperienciaComponent}, { path: 'academica', component: NewacademicaComponent}, { path: 'editaca/:id', component: EditacademicaComponent}];
+const routes: Routes = [{path:"", component:HomeComponent},{path:"login", component:LoginComponent}, { path: 'nuevaexp', component: NewExperienciaComponent},  { path: 'editexp/:id', component: EditExperienciaComponent}, { path: 'academica', component: NewacademicaComponent}, { path: 'editaca/:id', component: EditacademicaComponent}, { path: 'skills', component: NewSkillComponent}, { path: 'editskill/:id', component: EditSkillsComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

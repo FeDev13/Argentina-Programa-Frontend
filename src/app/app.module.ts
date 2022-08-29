@@ -24,6 +24,8 @@ import { interceptorProvider } from './service/interceptor-service';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NewacademicaComponent } from './components/academica/newacademica.component';
 import { EditacademicaComponent } from './components/academica/editacademica.component';
+import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
 
 
 
@@ -44,6 +46,7 @@ import { EditacademicaComponent } from './components/academica/editacademica.com
     EditExperienciaComponent,
     NewacademicaComponent,
     EditacademicaComponent,
+    EditSkillsComponent,
     
   ],
   imports: [

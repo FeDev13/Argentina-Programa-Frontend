@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SExperienciaService {
 
-  expURL = 'https://backendfedev13.herokuapp.com/explab/';
+  expURL = 'https://backendfedericorobledo.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -99,3 +99,10 @@
     0% {width: 0%;}
     100% {width: 100%;}
 }
+#newskill {
+    font-size: 1rem;
+}
+#new {
+    margin: 1rem;
+    font-size: 1rem;
+}

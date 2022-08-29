@@ -1,56 +1,93 @@
 <div class="row">
-    <h1 class="skills">Hard/Soft Skills</h1>
-  
-    <div class="col -sm-4 col -md-4 col -lg-4" id="html">
-      <div class="htmldiv">
-        <img
-          src="../../../assets/PngItem_4640079.png"
-          class="img-fluid htmlimg"
-        />
-      </div>
-      <div class="bigBar1" id="htmlbar">
-        <p class="percent">90%</p>
-      </div>
+  <h1 class="skills">Hard/Soft Skills</h1>
+
+  <div class="col -sm-4 col -md-4 col -lg-4" id="html">
+    <div class="htmldiv">
+      <img
+        src="../../../assets/PngItem_4640079.png"
+        class="img-fluid htmlimg"
+      />
     </div>
-  
-    <div class="col -sm-4 col -md-4 col -lg-4" id="css">
-      <div class="cssdiv">
-        <img
-          src="../../../assets/css-3-1-logo-black-and-white.png"
-          class="img-fluid cssimg"
-        />
-      </div>
-      <div class="bigBar2" id="cssbar">
-        <p class="percent">90%</p>
-      </div>
+    <div class="bigBar1" id="htmlbar">
+      <p class="percent">90%</p>
     </div>
-  
-    <div class="col -sm-4 col -md-4 col -lg-4" id="jscript">
-      <div class="jsdiv">
-        <img src="../../../assets/jslogoresized.png" class="img-fluid jsimg" />
-      </div>
-      <div class="bigBar3">
-        <p class="percent">75%</p>
-      </div>
+  </div>
+
+  <div class="col -sm-4 col -md-4 col -lg-4" id="css">
+    <div class="cssdiv">
+      <img
+        src="../../../assets/css-3-1-logo-black-and-white.png"
+        class="img-fluid cssimg"
+      />
     </div>
-    
-    
-    <div class="col -sm-4 col -md-4 col -lg-4" id="angular">
-      <div class="angdiv">
-        <img src="../../../assets/angular_whiteTransparent.png" class="img-fluid angimg" />
-      </div>
-      <div class="bigBar4">
-        <p class="percent">60%</p>
-      </div>
+    <div class="bigBar2" id="cssbar">
+      <p class="percent">90%</p>
     </div>
-    
-    
-    <div class="col -sm-4 col -md-4 col -lg-4" id="git">
-      <div class="gitdiv">
-        <img src="../../../assets/Git-Icon-White.png" class="img-fluid gitimg" />
+  </div>
+
+  <div class="col -sm-4 col -md-4 col -lg-4" id="jscript">
+    <div class="jsdiv">
+      <img src="../../../assets/jslogoresized.png" class="img-fluid jsimg" />
+    </div>
+    <div class="bigBar3">
+      <p class="percent">75%</p>
+    </div>
+  </div>
+
+  <div class="col -sm-4 col -md-4 col -lg-4" id="angular">
+    <div class="angdiv">
+      <img
+        src="../../../assets/angular_whiteTransparent.png"
+        class="img-fluid angimg"
+      />
+    </div>
+    <div class="bigBar4">
+      <p class="percent">60%</p>
+    </div>
+  </div>
+
+  <div class="col -sm-4 col -md-4 col -lg-4" id="git">
+    <div class="gitdiv">
+      <img src="../../../assets/Git-Icon-White.png" class="img-fluid gitimg" />
+    </div>
+    <div class="bigBar5">
+      <p class="percent">70%</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-2">
+    <button
+      id="newskill"
+      type="button"
+      class="btn btn-dark"
+      routerLink="/skills"
+      *ngIf="isLogged"
+    >
+      Nueva skill
+    </button>
+  </div>
+
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+    <div id="newcard" class="card-body" *ngFor="let Skills of skills">
+      <h5 class="card-title">{{ Skills.nombreS }}</h5>
+      <p class="card-text">{{ Skills.descripcionS }}</p>
+      <div *ngIf="isLogged">
+        <button
+          id="new"
+          class="btn btn-light"
+          routerLink="/editskill/{{ Skills.id }}"
+        >
+          EDITAR
+        </button>
       </div>
-      <div class="bigBar5">
-        <p class="percent">70%</p>
+      <div *ngIf="isLogged">
+        <button id="new" class="btn btn-danger" (click)="delete(Skills.id)">
+          BORRAR
+        </button>
       </div>
     </div>
   </div>
+</div>

@@ -61,5 +61,19 @@ li {
 
 .card {
     margin: 1rem;
-    border: none;
+    border-radius: 8px;
+    border-color: white;
+}
+.card-body {
+    margin: 1rem;
+    border-radius: 8px;
+    border-color: white;
+}
+#newaca {
+    font-size: 1rem;
+}
+#new {
+    margin: 1rem;
+    font-size: 1rem;
+
 }

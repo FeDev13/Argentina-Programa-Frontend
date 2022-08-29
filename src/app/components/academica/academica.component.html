@@ -62,6 +62,7 @@
   <div class="row">
     <div class="col-lg-2">
       <button
+        id="newaca"
         type="button"
         class="btn btn-dark"
         routerLink="/academica"
@@ -73,29 +74,32 @@
 
     <div class="col lg 1"></div>
     <div class="col-lg-11">
-      <table class="table">
-        <tbody>
-          <tr *ngFor="let Educacion of educacion">
-            <td>
-              <h2>{{ Educacion.nombreE }}</h2>
-            </td>
-            <td>{{ Educacion.descripcionE }}</td>
-            <td *ngIf="isLogged">
-              <button
-                class="btn btn-light"
-                routerLink="/editaca/{{ Educacion.id }}"
-              >
-                EDITAR
-              </button>
-            </td>
-            <td *ngIf="isLogged">
-              <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                BORRAR
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="newcard" class="card-body" *ngFor="let Educacion of educacion">
+        <h5 class="card-title">{{ Educacion.nombreE }}</h5>
+        <p class="card-text">{{ Educacion.descripcionE }}</p>
+        <a
+          href="https://www.coderhouse.com/certificados/62ead190985557002457f6f2"
+          ><button class="btn btn-danger">Ver certificado</button></a
+        >
+        <div *ngIf="isLogged">
+          <button
+            id="new"
+            class="btn btn-light"
+            routerLink="/editaca/{{ Educacion.id }}"
+          >
+            EDITAR
+          </button>
+        </div>
+        <div *ngIf="isLogged">
+          <button
+            id="new"
+            class="btn btn-danger"
+            (click)="delete(Educacion.id)"
+          >
+            BORRAR
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
