@@ -1,46 +1,88 @@
 <div class="row">
-    <h1 class="projectos">Projectos</h1>
-    <div class="contenedor">
+  <h1 class="projectos">Projectos</h1>
+  <div class="contenedor">
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
+      <h2>Proyecto Ecommerce</h2>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto1">
+        <img
+          src="../../../assets/Captura de pantalla (1).jpg"
+          class="img-fluid"
+          id="florskinart"
+        />
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
+      <h2>To do List</h2>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto1">
+        <img src="../../../assets/todolist.png" class="img-fluid" id="todo" />
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
+      <h2>JavaScript Clock</h2>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto2">
+        <img
+          src="../../../assets/jsclock2.png"
+          class="img-fluid"
+          id="jsclock"
+        />
+      </div>
+
       <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-        <h2>Proyecto Ecommerce</h2>
+        <h2>Codepen Portfolio</h2>
       </div>
       <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto1">
-          <img src="../../../assets/Captura de pantalla (1).jpg" class="img-fluid" id="florskinart" />
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-        <h2>To do List</h2>
-      </div>
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto1">
-          <img src="../../../assets/todolist.png" class="img-fluid" id="todo" />
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-        <h2>JavaScript Clock</h2>
-      </div>
-      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto2">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto3">
           <img
-            src="../../../assets/jsclock2.png"
+            src="../../../assets/portfolio.png"
             class="img-fluid"
-            id="jsclock"
+            id="portfolio"
           />
-        </div>
-      
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-          <h2>Codepen Portfolio</h2>
-        </div>
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-          <div class="col-xs-12 col-sm-5 col-md-5 col-lg-7 proyecto3">
-            <img
-              src="../../../assets/portfolio.png"
-              class="img-fluid"
-              id="portfolio"
-            />
-          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-lg-2">
+      <button
+        id="newproyecto"
+        type="button"
+        class="btn btn-dark"
+        routerLink="/proyectos"
+        *ngIf="isLogged"
+      >
+        Nuevo proyecto
+      </button>
+    </div>
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+      <div id="newcard" class="card-body" *ngFor="let Proyectos of proyectos">
+        <h5 class="card-title">{{ Proyectos.nombreP }}</h5>
+        <p class="card-text">{{ Proyectos.descripcionP }}</p>
+        <div *ngIf="isLogged">
+          <button
+            id="new"
+            class="btn btn-light"
+            routerLink="/editproy/{{ Proyectos.id }}"
+          >
+            EDITAR
+          </button>
+        </div>
+        <div *ngIf="isLogged">
+          <button
+            id="new"
+            class="btn btn-danger"
+            (click)="delete(Proyectos.id)"
+          >
+            BORRAR
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

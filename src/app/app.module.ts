@@ -26,6 +26,8 @@ import { NewacademicaComponent } from './components/academica/newacademica.compo
 import { EditacademicaComponent } from './components/academica/editacademica.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditSkillsComponent } from './components/skills/edit-skills.component';
+import { NewproyectsComponent } from './components/projects/newproyects.component';
+import { EditproyectsComponent } from './components/projects/editproyects.component';
 
 
 
@@ -47,6 +49,8 @@ import { EditSkillsComponent } from './components/skills/edit-skills.component';
     NewacademicaComponent,
     EditacademicaComponent,
     EditSkillsComponent,
+    NewproyectsComponent,
+    EditproyectsComponent,
     
   ],
   imports: [
